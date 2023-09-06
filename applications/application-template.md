@@ -28,11 +28,19 @@
 
 - **Why Polkadot?**:
 
-  Polkadot's unique architecture and features align perfectly with Porfo's vision of creating a seamless, secure, and scalable digital asset management platform. The Polkadot ecosystem offers the tools and infrastructure that can help Porfo overcome the current challenges in the digital asset space, such as fragmentation, security risks, and scalability issues.
+  Porfo's unique offering of a one-click cross-chain swap is essentially a fusion of a smart wallet, a swap aggregator, and a bridge. While most components of this system are decentralized, there exists a slight centralization in the bridge component. We aim to revolutionize this aspect by leveraging Polkadot's Cross-Chain Messaging (XCM) feature and parathreads.
+
+Polkadot's XCM allows for arbitrary data to be sent from one decentralized chain to another in a secure and trust-free fashion. This feature aligns perfectly with Porfo's mission to offer seamless cross-chain transactions. Additionally, Polkadot's parathreads offer a more economical and scalable way to achieve the same, allowing Porfo to optimize costs while ensuring high throughput and low latency.
+
+By integrating these Polkadot features, Porfo can achieve a fully decentralized, secure, and efficient bridge for cross-chain swaps, thereby fulfilling our vision of creating a truly seamless and user-centric digital asset management platform.
 
 - **Team's Interest**:
 
   Our team is deeply passionate about blockchain technology and its potential to transform various industries. We are particularly excited about Polkadot's vision of a multi-chain interconnected ecosystem and believe that Porfo can contribute significantly to this vision. Our goal is to create a user-centric platform that simplifies digital asset management, and we see Polkadot as the ideal partner to achieve this.
+
+One of our innovative features is the Porfo Naming Service (PNS), which aims to provide a unique advantage to users by offering a human-readable address system. By integrating this with the Polkadot ecosystem, we can make the PNS more efficient, reliable, and cost-effective. Polkadot's architecture allows for faster upgrades, quicker transactions, and more economical updates, making the service frequently usable and highly efficient.
+
+Furthermore, one of Polkadot's standout features is its ability to interoperate with other blockchains. A Porfo Naming Service on Polkadot could potentially resolve to addresses not just on Polkadot or its parachains but also on other blockchains that are bridged to Polkadot. This interoperability would make the service more versatile and widely applicable, thereby fulfilling our vision of creating a truly seamless and user-centric digital asset management platform.
 
 ---
 
@@ -45,12 +53,43 @@
 - **PoC/MVP**: [Porfo MVP](https://github.com/porfo/porfo-mvp)
 - **Project Limitations**: Porfo will not handle fiat transactions initially.
 
+As part of our ongoing efforts to innovate and enhance the user experience in digital asset management, we are introducing the Porfo Bolt Network. This feature aims to revolutionize transaction speeds and cost-effectiveness across multiple blockchains. To achieve this, we will be leveraging Polkadot's unique capabilities, particularly its parathreads and Cross-Chain Message Passing (XCM) features.
+
+The **Porfo Bolt Network** aims to revolutionize the way transactions are conducted across multiple blockchains. Leveraging Polkadot's parathreads, the project seeks to create off-chain payment channels that allow for instant transactions between parties. These channels can then be settled across multiple blockchains in one go, providing a seamless and efficient user experience.
+
+Project Technical Explanation:
+
+Utilizing *Polkadot's Parathreads*:
+Parathreads offer a cost-effective way to access Polkadot's features without the commitment of a full parachain. Porfo Bolt Network will use a parathread to handle the logic and storage of off-chain payment channels.
+
+Off-Chain Payment Channels:
+Porfo Bolt Network will create off-chain payment channels similar to Bitcoin's Lightning Network. These channels will record transactions without committing them to any blockchain initially, allowing for instant and fee-less transactions.
+
+Cross-Chain Transactions via XCM:
+Polkadot's Cross-Chain Message Passing (XCM) will be used to enable these payment channels to support multiple blockchains. Users can transact in various cryptocurrencies, and when any party wishes to settle, Porfo Bolt Network will use XCM to execute the settlements across the different chains.
+
+Settlement Logic:
+Smart contracts or equivalent logic will be implemented to handle the settlement process. Upon a settlement request from any party, the payment channel will close, and the final state will be committed to the respective blockchains using Polkadot's XCM.
+
+Security Measures:
+The shared security model of Polkadot will be utilized to secure these transactions and settlements, ensuring trustless and secure operations.
+
 ### Ecosystem Fit
 
-- **Fit**: Porfo aims to be a user-friendly digital asset management platform in the Polkadot ecosystem.
-- **Target Audience**: Cryptocurrency users, dapp developers, and institutional investors.
-- **Needs Met**: Simplifies asset management and transactions across multiple blockchains.
-- **Similar Projects**: While there are other asset management platforms, none offer the cross-chain capabilities and user-friendly intent-based transactions that Porfo does.
+Synergies between Porfo and Polkadot
+Enhanced Interoperability: Porfo leverages Polkadot's core feature of interoperability to offer seamless experiences across multiple blockchains. This not only benefits Porfo users but also showcases Polkadot's capabilities, driving more users to the Polkadot ecosystem.
+
+Shared Security: Polkadot's shared security model enhances the trustworthiness of transactions and settlements on Porfo, thereby increasing user confidence in both platforms.
+
+Scalable Solutions: Polkadot's parathreads provide a scalable infrastructure that Porfo can utilize to handle high transaction volumes, thereby demonstrating the scalability features of Polkadot to a broader audience.
+
+Efficient Cross-Chain Transactions: Polkadot's Cross-Chain Message Passing (XCM) allows Porfo to execute cross-chain transactions efficiently. This serves as a real-world example of Polkadot's efficiency and versatility.
+
+Innovation and Future Enhancements: Polkadot's rich feature set offers avenues for future innovations on Porfo, which in turn adds more utility and functionalities to the Polkadot ecosystem.
+
+User Adoption and Community Engagement: Porfo's user-friendly platform can drive more users to the Polkadot ecosystem, increasing adoption and community engagement.
+
+Economic Activity: The growth of Porfo is likely to increase transaction volumes and economic activities within the Polkadot ecosystem, benefiting all network participants.
 
 ## Team :busts_in_silhouette:
 
@@ -91,44 +130,75 @@
 - [Porfo MVP](https://github.com/porfo/porfo-mvp)
 - [Porfo Technical Documentation](https://porfo.gitbook.io/v1/)
 
+---
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 12 months
+- **Total Estimated Duration:** 1 year and 1 quarter
 - **Full-Time Equivalent (FTE):** 3
 - **Total Costs:** 150,000 USD
 
-### Milestone 1 — Basic Functionality
+### Milestone 1: Research and Feasibility Study
 
-- **Estimated Duration:** 3 months
+- **Estimated Duration:** Q1
+- **FTE:** 1
+- **Costs:** 20,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **1a.** | Research Report | A comprehensive study to understand the technical requirements and feasibility of integrating Porfo with Polkadot. |
+
+### Milestone 2: Parathread Setup and Basic Channel Logic
+
+- **Estimated Duration:** Q2
+- **FTE:** 1.5
+- **Costs:** 30,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **2a.** | Parathread Setup | Set up the parathread on Polkadot. |
+| **2b.** | Basic Channel Logic | Implement basic payment channel logic. |
+| **2c.** | Working Prototype | A working prototype with basic channel functionality. |
+
+### Milestone 3: XCM Integration and Multi-Chain Support
+
+- **Estimated Duration:** Q3
 - **FTE:** 2
+- **Costs:** 35,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **3a.** | XCM Integration | Integrate Polkadot's XCM to enable cross-chain transactions. |
+| **3b.** | Multi-Chain Support | Test the multi-chain functionality. |
+| **3c.** | Alpha Version | An alpha version of the project that supports multiple blockchains. |
+
+### Milestone 4: Security Measures and Settlement Logic
+
+- **Estimated Duration:** Q4
+- **FTE:** 2.5
 - **Costs:** 40,000 USD
 
 | Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Inline documentation and user tutorial |
-| **0c.** | Testing Guide | Unit tests for core functions |
-| **0d.** | Docker | Dockerfile for testing all functionality |
-| **0e.** | Article | An article explaining the basic functionality |
-| 1. | Polkadot XCM Integration | Enable cross-chain transactions using Polkadot's XCM |
-| 2. | Intent-Based Transactions | Implement intent-based transactions in Porfo |
+| -----: | ----------- | ------------- |
+| **4a.** | Security Measures | Implement security features based on Polkadot's shared security model. |
+| **4b.** | Settlement Logic | Complete the settlement logic. |
+| **4c.** | Beta Version | A beta version of the project with security and settlement features. |
 
-### Milestone 2 — Advanced Features
+### Milestone 5: Testing and Deployment
 
-- **Estimated Duration:** 3 months
-- **FTE:** 2.5
-- **Costs:** 45,000 USD
+- **Estimated Duration:** Q1, Year 2
+- **FTE:** 3
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Inline documentation and advanced user tutorial |
-| **0c.** | Testing Guide | Unit tests for advanced features |
-| **0d.** | Docker | Dockerfile for testing all advanced features |
-| 3. | Polkadot Security Integration | Integrate Polkadot's shared security model |
-| 4. | Fractionalized Liquidity | Enable fractionalized liquidity in Porfo |
+| -----: | ----------- | ------------- |
+| **5a.** | User Testing | Conduct extensive testing involving real users. |
+| **5b.** | Feedback Adjustments | Make necessary adjustments based on user feedback. |
+| **5c.** | Final Version | A final version of the project ready for deployment. |
+
+---
 
 ## Future Plans
 
