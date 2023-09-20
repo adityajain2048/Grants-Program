@@ -95,19 +95,14 @@ Economic Activity: The growth of Porfo is likely to increase transaction volumes
 
 ### Team members
 
-- **Team Leader**: John Doe
-- **Team Members**: Jane Smith, Emily Brown
+- **Team Leader**: Aditya 
+- **Team Members**: Soneshwar, Sarvottam, Raghav, Pranay
 
 ### Contact
 
-- **Contact Name**: John Doe
-- **Contact Email**: john@porfo.com
-- **Website**: [Porfo Website](https://porfo.com)
-
-### Legal Structure
-
-- **Registered Address**: High Street 1, London LK1 234, UK
-- **Registered Legal Entity**: Porfo Innovations Ltd.
+- **Contact Name**: Aditya Jain
+- **Contact Email**: aditya@porfo.app
+- **Website**: [Porfo Website](https://porfo.app)
 
 ### Team's experience
 
@@ -122,12 +117,16 @@ Economic Activity: The growth of Porfo is likely to increase transaction volumes
 
 ### Team LinkedIn Profiles
 
-- [John Doe LinkedIn](https://www.linkedin.com/johndoe)
-- [Jane Smith LinkedIn](https://www.linkedin.com/janesmith)
+- Aditya Jain - Founder  https://www.linkedin.com/in/0xvestor/
+- Raghav -Cofounder and CBO https://www.linkedin.com/in/raghav-sawhney/
+- Soneshwar - CTO https://www.linkedin.com/in/soneshwar/
+- Sarvottam - Partner
+- Chirag - Tech Lead  https://www.linkedin.com/in/scyther37/
+- Pritesh Panda - Head of Product https://www.linkedin.com/in/priteshpanda/
+- Pranay Goenka - Head of Strategy https://www.linkedin.com/in/pranay-goenka/
 
 ## Development Status :open_book:
 
-- [Porfo MVP](https://github.com/porfo/porfo-mvp)
 - [Porfo Technical Documentation](https://porfo.gitbook.io/v1/)
 
 ---
